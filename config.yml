@@ -1,0 +1,26 @@
+batch_size: 32
+lambda: 10
+checkpoint_base: checkpoints
+samples_path: samples
+save_every: 5000
+resume: "checkpoints/checkpoint65000.pth"
+seed: 0
+use_cuda: True
+dataset_path: "data/mnist_test_seq.npy"
+dis_iters: 5
+epochs: 100000
+
+models:
+    generator:
+        fn: models/temporal_generator.py
+        z_slow_dim: 256
+        z_fast_dim: 256
+        out_channels: 1
+        bottom_width: 4
+        conv_ch: 512
+
+    discriminator:
+        fn: models/temporal_discriminator.py
+        name: TemporalDiscriminator
+        in_channels: 1
+        mid_ch: 62

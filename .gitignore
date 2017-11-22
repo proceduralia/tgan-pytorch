@@ -1,0 +1,7 @@
+__pycache__/
+data/*
+!data/.gitkeep
+samples/*
+!samples/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
