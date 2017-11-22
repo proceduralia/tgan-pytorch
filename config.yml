@@ -3,7 +3,7 @@ lambda: 10
 checkpoint_base: checkpoints
 samples_path: samples
 save_every: 5000
-resume: "checkpoints/checkpoint65000.pth"
+resume: ""
 seed: 0
 use_cuda: True
 dataset_path: "data/mnist_test_seq.npy"
