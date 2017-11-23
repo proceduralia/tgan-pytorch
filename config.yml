@@ -1,9 +1,9 @@
-batch_size: 32
+batch_size: 16
 lambda: 10
 checkpoint_base: checkpoints
 samples_path: samples
 save_every: 5000
-resume: ""
+resume: "checkpoints/checkpoint66000.pth"
 seed: 0
 use_cuda: True
 dataset_path: "data/mnist_test_seq.npy"
